@@ -1,0 +1,9 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+{% csrf_token%}
+<textarea name="text" placeholder="write your bid"></textarea>
+<button type="submit">
+ place Bid
+</button>
+{% endblock %}
